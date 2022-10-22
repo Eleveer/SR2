@@ -1,0 +1,33 @@
+n = int(input())
+y = input()
+b = str(n)
+a = b+y
+if "usr" in a:
+    usr = int(input('Подтвердите свой ID: '))
+    if usr==n:
+        print('Пользователь подтвержден')
+    else:
+        print('Неверный id-номер')
+if 'clc' in a:
+    print('Введите три любых числа')
+    a1=float(input())
+    a2=float(input())
+    a3=float(input())
+    mod= abs(a1)*abs(a2)*abs(a3)
+    summ = a1+a2+a3
+    maxx= max(a1,a2,a3)
+    minn= min(a1,a2,a3)
+    mm=maxx/minn
+    mim = maxx - a1 -a2 - a3 + maxx
+    print('Произведение модулей =',  mod)
+    print('Сумма чисел = ', summ)
+    print("Наибольшее = ", maxx)
+    print('Наименьшее = ', minn)
+    print("Деление = ", mm)
+    print('Вычитание = ', mim)
+if 'adm' in a:
+    m1=input('Введите строку: ')
+    if len(m1)>4 and ('.exe' or '.cmd' in m1):
+        print('Исполняемое действие')
+    else:
+        print('Неисполняемое действие')
